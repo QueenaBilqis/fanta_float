@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Fanta Ice Cream Floats</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&amp;family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF7D00", 
+                        secondary: "#E91E63", 
+                        tertiary: "#9C27B0",
+                        "background-light": "#FAFAFA",
+                        "background-dark": "#09090b",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#18181b",
+                    },
+                    fontFamily: {
+                        display: ["Fredoka", "sans-serif"],
+                        body: ["Nunito", "sans-serif"],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+                        'glossy': '0 20px 40px -10px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8)',
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 font-body antialiased min-h-screen">
+<nav class="fixed top-0 w-full z-40 bg-white/80 dark:bg-black/50 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
+<div class="max-w-md mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="font-display font-bold text-2xl text-primary tracking-wide">Fanta<span class="text-secondary">Floats</span></span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+<span class="material-icons-round">search</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="max-w-md mx-auto pt-24 pb-32">
+<section class="px-4 mb-10">
+<div class="relative overflow-hidden bg-gradient-to-br from-[#FF9A3D] to-[#FF4E50] dark:from-[#D84315] dark:to-[#B71C1C] rounded-[2rem] p-8 h-[400px] shadow-glossy flex flex-col justify-between group">
+<div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-yellow-300 rounded-full mix-blend-overlay filter blur-3xl opacity-50 animate-pulse"></div>
+<div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-pink-500 rounded-full mix-blend-overlay filter blur-3xl opacity-50"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 text-white/90 text-xs font-bold uppercase tracking-wide mb-3">
+<span class="bg-white/20 backdrop-blur-md border border-white/20 px-3 py-1 rounded-full">New Arrival</span>
+</div>
+<h1 class="font-display text-5xl text-white font-extrabold leading-[0.9] drop-shadow-sm">
+                    Fizz &amp; <br/> Cream
+                </h1>
+<p class="text-white/90 mt-3 text-lg font-medium max-w-[180px] leading-snug">The perfect blend of sparkling soda and soft serve.</p>
+</div>
+<div class="absolute -right-8 -bottom-8 w-72 h-auto z-0 transform rotate-[-8deg] transition-transform duration-700 group-hover:rotate-0 group-hover:scale-105">
+<img alt="Orange Float Hero" class="object-contain w-full drop-shadow-2xl opacity-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABEukRGQrxRs8kVHNlaz6vxedlXNQtEiEdlqWa0N_c3AjQV0ASIXf2uXvJKajHV8EJ8bHeqk10A75wTnbMVug6GJc5H459wxWAKhSsnZiJ4rYYQZPMj1qI6WAevtiN2Hrwbhcos5JZsg5nXvvtuRKiwpjLJkjPZhIyw9lFJMASQQJP7qb1pKIK9yR-SJfCo1smdIQruWvvSU-og9eJEbYUB4B99cTpod_4kFc-5bfePWFd4yE8zpL2qZjuPU_po-PzG_m4u509BJoa"/>
+</div>
+<div class="relative z-10 mt-auto">
+<button class="bg-white/90 backdrop-blur-sm text-primary font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl active:scale-95 transition-all transform flex items-center gap-2 text-sm">
+                    Order Now <span class="material-icons-round text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<section class="px-6 mb-10">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-display text-xl font-bold text-gray-900 dark:text-white">Why It's Special</h2>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-blue-50/50 dark:bg-blue-900/10 p-5 rounded-3xl border border-blue-100 dark:border-blue-900/30 flex flex-col items-start gap-3 backdrop-blur-sm">
+<div class="bg-blue-100 dark:bg-blue-800 p-2.5 rounded-2xl text-blue-600 dark:text-blue-300">
+<span class="material-icons-round text-xl">ac_unit</span>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 dark:text-white text-sm">Soft Serve</h3>
+<p class="text-[11px] text-gray-500 dark:text-gray-400 mt-0.5 font-medium">Creamy vanilla base</p>
+</div>
+</div>
+<div class="bg-orange-50/50 dark:bg-orange-900/10 p-5 rounded-3xl border border-orange-100 dark:border-orange-900/30 flex flex-col items-start gap-3 backdrop-blur-sm">
+<div class="bg-orange-100 dark:bg-orange-800 p-2.5 rounded-2xl text-orange-600 dark:text-orange-300">
+<span class="material-icons-round text-xl">bubble_chart</span>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 dark:text-white text-sm">Real Fizz</h3>
+<p class="text-[11px] text-gray-500 dark:text-gray-400 mt-0.5 font-medium">Max carbonation</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 mb-8">
+<div class="flex justify-between items-end mb-6 px-2">
+<div>
+<h2 class="font-display text-3xl font-bold text-gray-900 dark:text-white">Flavor <br/>Assortment</h2>
+</div>
+<button class="text-primary font-bold text-sm flex items-center bg-orange-50 dark:bg-orange-900/20 px-3 py-1 rounded-full hover:bg-orange-100 transition-colors">
+                See All <span class="material-icons-round text-base ml-1">chevron_right</span>
+</button>
+</div>
+<div class="flex gap-3 mb-8 px-2 overflow-x-auto no-scrollbar pb-2">
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-primary text-white shadow-lg shadow-orange-200/50 dark:shadow-none font-bold text-sm tracking-wide transform active:scale-95 transition-all">Small</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 font-bold text-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">Medium</button>
+<button class="flex-shrink-0 px-6 py-2.5 rounded-full bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 font-bold text-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">Large</button>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="group relative overflow-hidden rounded-[2.5rem] bg-white dark:bg-card-dark p-1 shadow-glossy transition-all hover:shadow-[0_25px_50px_-12px_rgba(233,30,99,0.25)] border border-gray-100 dark:border-gray-800">
+<div class="absolute inset-0 bg-gradient-to-br from-pink-50/50 via-transparent to-transparent dark:from-pink-900/10 pointer-events-none"></div>
+<div class="relative flex h-full items-center p-5 z-10">
+<div class="flex flex-col items-start w-[55%] pl-2">
+<span class="inline-block rounded-lg bg-pink-100 dark:bg-pink-900/40 px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-widest text-pink-600 dark:text-pink-300 mb-2">Best Seller</span>
+<h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white leading-tight mb-1">Strawberry Dream</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium mb-3">Sweet &amp; Creamy</p>
+<div class="flex items-center justify-between w-full mt-auto">
+<span class="text-2xl font-bold text-gray-900 dark:text-white">$4.50</span>
+</div>
+<button class="mt-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full py-2.5 px-5 text-xs font-bold shadow-lg flex items-center gap-2 hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all active:scale-95">
+                                Add <span class="material-icons-round text-sm">add</span>
+</button>
+</div>
+<div class="relative flex w-[45%] items-center justify-center h-40">
+<div class="absolute bg-pink-500/10 dark:bg-pink-500/20 w-32 h-32 rounded-full blur-xl"></div>
+<img alt="Strawberry Float" class="h-40 w-40 object-cover object-center transform group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8oH_6W6CDMcd0SMZr9ZeLg02CkpxnMmr1GBFSSBUDef67UOc-7WwwrR8qfDg1SNBugFl8dskiU76YKggDiedwF7NMGUFg4-r0KuJ6N9UOsxGdcjxWQD0RiF9hQHCjpFDEJFtIC00JHe1UpNLsexNYOK1Go_nfqTizuDJgtodp2FuOvuUULxw8RQ6Kkvec8kPrjo8l7ZKp01gNpdAbxKTvRKPp-WZj2EgwLWeEFzcADHA4LmA4JahyunVTLL0DSZmSxyU57vFnXT7C"/>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-[2.5rem] bg-white dark:bg-card-dark p-1 shadow-glossy transition-all hover:shadow-[0_25px_50px_-12px_rgba(255,125,0,0.25)] border border-gray-100 dark:border-gray-800">
+<div class="absolute inset-0 bg-gradient-to-br from-orange-50/50 via-transparent to-transparent dark:from-orange-900/10 pointer-events-none"></div>
+<div class="relative flex h-full items-center p-5 z-10">
+<div class="flex flex-col items-start w-[55%] pl-2">
+<span class="inline-block rounded-lg bg-orange-100 dark:bg-orange-900/40 px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-widest text-orange-600 dark:text-orange-300 mb-2">Classic</span>
+<h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white leading-tight mb-1">Orange Sunset</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium mb-3">Zesty &amp; Fresh</p>
+<div class="flex items-center justify-between w-full mt-auto">
+<span class="text-2xl font-bold text-gray-900 dark:text-white">$4.50</span>
+</div>
+<button class="mt-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full py-2.5 px-5 text-xs font-bold shadow-lg flex items-center gap-2 hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all active:scale-95">
+                                Add <span class="material-icons-round text-sm">add</span>
+</button>
+</div>
+<div class="relative flex w-[45%] items-center justify-center h-40">
+<div class="absolute bg-orange-500/10 dark:bg-orange-500/20 w-32 h-32 rounded-full blur-xl"></div>
+<img alt="Orange Float" class="h-40 w-40 object-cover object-center transform group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLWZ_J0ymUcyQw7SybjGBYokZBfjHwACS_6laEl5VFiTY7SZ4J8vvPKA7FGybQmswyFU1jSXyvOxfC4KJcPFizaOIbrZPdon26Eoinb_AvxGlPH0MYinjn_k9Hgcjovu22uRxhrPL0_ShOpFu8k02h1S7lfebkBBLBaMrJalkhhOCuyyfU_pd0r5RBZWdMv1o3RTVmefgfWtTA8W-N5t5S9-PZqBaSaQPWAK3bds7zeIt3ZWn04JOshL1acAs371j88CgLiSddf-mz"/>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-[2.5rem] bg-white dark:bg-card-dark p-1 shadow-glossy transition-all hover:shadow-[0_25px_50px_-12px_rgba(156,39,176,0.25)] border border-gray-100 dark:border-gray-800">
+<div class="absolute inset-0 bg-gradient-to-br from-purple-50/50 via-transparent to-transparent dark:from-purple-900/10 pointer-events-none"></div>
+<div class="relative flex h-full items-center p-5 z-10">
+<div class="flex flex-col items-start w-[55%] pl-2">
+<span class="inline-block rounded-lg bg-purple-100 dark:bg-purple-900/40 px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-widest text-purple-600 dark:text-purple-300 mb-2">Exotic</span>
+<h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white leading-tight mb-1">Grape Galaxy</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium mb-3">Bold &amp; Juicy</p>
+<div class="flex items-center justify-between w-full mt-auto">
+<span class="text-2xl font-bold text-gray-900 dark:text-white">$4.50</span>
+</div>
+<button class="mt-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full py-2.5 px-5 text-xs font-bold shadow-lg flex items-center gap-2 hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all active:scale-95">
+                                Add <span class="material-icons-round text-sm">add</span>
+</button>
+</div>
+<div class="relative flex w-[45%] items-center justify-center h-40">
+<div class="absolute bg-purple-500/10 dark:bg-purple-500/20 w-32 h-32 rounded-full blur-xl"></div>
+<img alt="Grape Float" class="h-40 w-40 object-cover object-center transform group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClqjYE0gGGad9hQE5t5U7KW9vWxcLqmDltEhn7acWmvVYY-Z9elOx1NVaPxVIem4jo55KQ6s6b5iSO0S7lFlIP4Pi1MgfXkDjof6y7NDdb7vRvQFfEB_U4HEXMa9vkQ06jJauVwdTHD7s1SIjElaA0OrhZg-UkQ7Iji8I3Kqi2AkXP5lRXDHJqX_0g8IwU0Kde1eUUO471NESoZtJjwev0upUjGHSXl5tk-bGMc3Ude07Q3N4j5ihDLhS74092I0yMfIUYVe5pr5Xd"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 mt-12">
+<div class="relative overflow-hidden rounded-[2.5rem] shadow-2xl">
+<div class="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpqyoL9_D_4phdpUAztXe3HEgNQvFsYUj1TQAXKzIa4wWFD8FiFSxaYGi73zHm2dYNrfrE0a3AM0HjflccoYmE05DRWrLrigUhJZAej8fFNsadqPM1rKZabzjNloOU57yrJvGYYcbVMvUjNBykagdv0pLwDU43T64vBENN0_5sH47lJY0irzDO0MQZV6wsd0BdRmUbgXr0FpSfwrZJB3F4BOCkYimKEfz3Kz1S98eTPbkHQ2QzZ0d9edIZBsXBCvU1m02N1XpoRZpY')] bg-cover bg-center"></div>
+<div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
+<div class="relative z-10 p-8 backdrop-blur-xl bg-white/10 border border-white/20">
+<div class="text-center mb-8">
+<span class="inline-block p-3 rounded-full bg-white/20 backdrop-blur-md mb-4 shadow-inner">
+<span class="material-icons-round text-white text-2xl">science</span>
+</span>
+<h2 class="font-display text-3xl font-bold text-white mb-2">Create Your Mix</h2>
+<p class="text-white/80 text-sm font-medium">Customize your float with extra toppings or mix flavors!</p>
+</div>
+<form class="space-y-4">
+<div class="group relative">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-icons-round text-white/50 text-sm">person</span>
+</div>
+<input class="w-full rounded-2xl border border-white/30 bg-white/10 py-4 pl-10 pr-4 text-sm text-white placeholder-white/60 focus:ring-0 focus:border-white/60 focus:bg-white/20 transition-all outline-none" placeholder="Your Name" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="relative">
+<select class="appearance-none w-full rounded-2xl border border-white/30 bg-white/10 py-4 pl-4 pr-10 text-sm text-white focus:ring-0 focus:border-white/60 focus:bg-white/20 transition-all outline-none">
+<option class="text-gray-800">Flavor...</option>
+<option class="text-gray-800">Strawberry</option>
+<option class="text-gray-800">Orange</option>
+<option class="text-gray-800">Grape</option>
+</select>
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+<span class="material-icons-round text-white/70">expand_more</span>
+</div>
+</div>
+<div class="relative">
+<select class="appearance-none w-full rounded-2xl border border-white/30 bg-white/10 py-4 pl-4 pr-10 text-sm text-white focus:ring-0 focus:border-white/60 focus:bg-white/20 transition-all outline-none">
+<option class="text-gray-800">Size...</option>
+<option class="text-gray-800">Small</option>
+<option class="text-gray-800">Medium</option>
+<option class="text-gray-800">Large</option>
+</select>
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+<span class="material-icons-round text-white/70">expand_more</span>
+</div>
+</div>
+</div>
+<button class="w-full bg-white text-secondary font-bold py-4 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.2)] hover:bg-gray-50 active:scale-[0.98] transition-all" type="button">
+                        Start Custom Order
+                    </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<div class="fixed bottom-0 left-0 w-full bg-white/90 dark:bg-card-dark/90 backdrop-blur-xl border-t border-gray-100 dark:border-gray-800 pb-safe z-50">
+<div class="flex justify-between items-center px-6 pt-3 pb-1">
+<button class="flex flex-col items-center gap-1 w-14 group">
+<span class="material-icons-round text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors text-2xl">home</span>
+<span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-14">
+<div class="bg-primary/10 p-1.5 rounded-2xl -mt-2 mb-0.5">
+<span class="material-icons-round text-primary text-2xl">icecream</span>
+</div>
+<span class="text-[10px] font-bold text-primary">Flavors</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-14 group">
+<span class="material-icons-round text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors text-2xl">shopping_bag</span>
+<span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors">Order</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-14 group">
+<span class="material-icons-round text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors text-2xl">star</span>
+<span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors">Reviews</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-14 group">
+<span class="material-icons-round text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors text-2xl">person</span>
+<span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 group-hover:text-primary transition-colors">Profile</span>
+</button>
+</div>
+</div>
+
+</body></html>

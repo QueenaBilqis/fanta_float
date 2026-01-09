@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fanta Ice Cream Float - Customer Reviews &amp; Feedback</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&amp;family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF4081", // Vibrant pink/magenta from the splash
+                        secondary: "#FF9E80", // Soft orange/peach accent
+                        "background-light": "#FFF0F5", // Very light pinkish white
+                        "background-dark": "#1A050A", // Deep dark red/black
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#2D1B22",
+                    },
+                    fontFamily: {
+                        display: ["Fredoka", "sans-serif"],
+                        body: ["Nunito", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "2rem",
+                        "3xl": "3rem",
+                    },
+                    backgroundImage: {
+                        'splash-pattern': "url('https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=2574&auto=format&fit=crop')",
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .glass-panel {
+            background: rgba(30, 30, 30, 0.6);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .dark .glass-card {
+            background: rgba(45, 27, 34, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .floating-fruit {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 font-body min-h-screen relative overflow-x-hidden selection:bg-primary selection:text-white transition-colors duration-300">
+<div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-pink-100/50 via-white/80 to-orange-100/50 dark:from-background-dark dark:via-background-dark dark:to-gray-900 z-0"></div>
+<img alt="Pink fruit splash background" class="absolute bottom-0 left-0 w-full h-3/4 object-cover object-bottom opacity-20 dark:opacity-10 mask-image-gradient-b" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQvuVTsiUPtXI3_1BdQu0COiMzXYn7JUnh88fXFawo1JndScbDBbzhN3sVe_QpQc2v4Tl0FSXZOL2fF0uCq1hbtD9vvTxK_6c_TL7eEj_i0mpjbhbeREobT7k657PbjOQakrIWCFgPK8FT3P268IM95DKHc1aOXEUJw5VpkEphGJuhtgwFJUm86XZTKYGlZgKQU7bnqrBAOQc4bP5C8s6VYBPZKSs5FKAXgkUGQ2OGvsWQDrr3Gc9d1-1Q0kfqacVCFTPNlliA3Dmr" style="-webkit-mask-image: linear-gradient(to bottom, transparent, black);"/>
+<div class="absolute top-20 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-40 left-10 w-48 h-48 bg-orange-400/10 rounded-full blur-3xl"></div>
+</div>
+<nav class="relative z-50 px-6 py-4 flex justify-between items-center glass-panel sticky top-0 border-b border-white/20 dark:border-white/5">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-primary text-3xl">local_drink</span>
+<span class="font-display font-bold text-xl tracking-tight text-gray-800 dark:text-white">Fanta <span class="text-primary">Float</span></span>
+</div>
+<button class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-icons-round text-gray-600 dark:text-gray-300">notifications_none</span>
+</button>
+</nav>
+<main class="relative z-10 container mx-auto px-4 pt-6 pb-32 max-w-md">
+<div class="mb-6 flex items-end justify-between px-2">
+<div>
+<h1 class="font-display text-3xl font-bold text-gray-800 dark:text-white">Reviews</h1>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium">What our community is sipping</p>
+</div>
+<div class="flex -space-x-2">
+<img alt="User 1" class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5cSYq2peTMpmdoe_ePhfPk1VNTJ3t_NNvZ-i5WwwwgxEbxFBxMGwrOibgZzKg5cUguBqGJoayRUO0-7vobOoOdZJQ1IRQS5DO-5lWkZecSibOUPEGYeK2aY7UennjBKxRtAVzm2s9nDlD6WJAeYpef21Yfg2CoieiUxFI75JpJxlWqbRPlZEKTRagbC3qoSFcXHi4dDULpoO9KlEAqirjdxhyY4az36VLx_X1F318rlspSgjBIS6JUGNey-TvV6uNmrkTsmzR2I-h"/>
+<img alt="User 2" class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu9QbWOtHMjo4r2zBfn2Jhi6aejhGuoxqiQwxZGa7dy1R3CcLEGKZ0miB6sIHMsfAyeZFlyFQMSiFLkPPIYFMU4fzOJlQoRZKZshfBctP5PztCQfUQev0g8fkD-SUZkALg9PusFzlhYwR8uwV5wkADF3s_XHFdBtUQoVlujcMe_RIV34NXuYoLvMeKlhVq5PnBrqJv1r3D8cCL-b8uTlzfr90BEnu0330PjMVBRqWd170NhjZt-G2jpGVkr0aYbi4UYnh2wXWnRTH5"/>
+<img alt="User 3" class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQfrumxauJCVlZiQ9qJQyXXbyo6N4URjmukdRfMT3_req2eDNSbp11srRRC2Ekv2a0jJA7mFoqe73eZ8tMIR3LPs8zjXBlPP5vZ8XhBnqPtZ11nuWJ-RcEPf3qfFNOfGR0DbxsrOL5gOZWXohmdKxptwZyEjN7BsSFe5x1oNSVpZcUcBlvanMm1xUuiWa1VdeK2_wZ8C4L2I7RNUt8rEdFbLNh8BRodd3BlZTsO62hts5HPtr4vr5XPk8YU39lYhYyAG1pO2omZ7tn"/>
+<div class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-[10px] font-bold text-gray-600 dark:text-gray-300">+2k</div>
+</div>
+</div>
+<section class="mb-8">
+<div class="glass-card rounded-3xl p-6 shadow-lg shadow-pink-500/5 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
+<div class="flex items-center gap-6 relative z-10">
+<div class="flex flex-col items-center justify-center min-w-[100px]">
+<span class="font-display text-5xl font-bold text-gray-800 dark:text-white">4.8</span>
+<div class="flex text-amber-400 text-lg my-1">
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star_half</span>
+</div>
+<span class="text-xs text-gray-500 dark:text-gray-400 font-semibold">1,248 Reviews</span>
+</div>
+<div class="h-16 w-[1px] bg-gray-200 dark:bg-gray-700"></div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center gap-2 text-xs">
+<span class="w-3 text-right font-bold text-gray-600 dark:text-gray-300">5</span>
+<div class="flex-1 h-1.5 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%] rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs">
+<span class="w-3 text-right font-bold text-gray-600 dark:text-gray-300">4</span>
+<div class="flex-1 h-1.5 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[10%] rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs">
+<span class="w-3 text-right font-bold text-gray-600 dark:text-gray-300">3</span>
+<div class="flex-1 h-1.5 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-yellow-400 w-[3%] rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs">
+<span class="w-3 text-right font-bold text-gray-600 dark:text-gray-300">2</span>
+<div class="flex-1 h-1.5 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-gray-300 w-[1%] rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 text-xs">
+<span class="w-3 text-right font-bold text-gray-600 dark:text-gray-300">1</span>
+<div class="flex-1 h-1.5 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-gray-300 w-[1%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="flex gap-3 overflow-x-auto pb-4 mb-2 no-scrollbar px-1">
+<button class="px-5 py-2 bg-gray-800 text-white rounded-full text-sm font-bold shadow-md whitespace-nowrap">All Reviews</button>
+<button class="px-5 py-2 glass-card text-gray-600 dark:text-gray-300 rounded-full text-sm font-semibold whitespace-nowrap border border-white/40">With Photos</button>
+<button class="px-5 py-2 glass-card text-gray-600 dark:text-gray-300 rounded-full text-sm font-semibold whitespace-nowrap border border-white/40">Verified</button>
+<button class="px-5 py-2 glass-card text-gray-600 dark:text-gray-300 rounded-full text-sm font-semibold whitespace-nowrap border border-white/40">Latest</button>
+</div>
+<div class="space-y-5">
+<article class="glass-card rounded-2xl p-4 transition-transform active:scale-[0.99]">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-3">
+<img alt="Reviewer" class="w-10 h-10 rounded-full object-cover ring-2 ring-white dark:ring-gray-700 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Tw26hvVnc57utRzqCYRo-M5GJ6b-MoOLdv0ckkxZNagqUAJhQ8M7CxcTvgXXV2NF9W4US_SmfZI584GMM-Kjdzuzu9Lv76pEuN1jtzzUkzqdK9dzKpAQ22dNupzirPJZrXnMLacq8PuT9Ha_sDBh5SCzUUx7gqlTPXg8GWBZ_omYCZNJCa9fvzQF-nEHUwDjTOU8-9EshPwl47AyeGk3paZq12cazf84IlZd8VuNtjKG4WR45qAYvOpBSqNhmOTCMgznp79ZqJ43"/>
+<div>
+<h3 class="font-bold text-sm text-gray-800 dark:text-white flex items-center gap-1">
+                            Sarah Jenkins
+                            <span class="material-icons-round text-blue-500 text-[14px]" title="Verified Purchaser">verified</span>
+</h3>
+<div class="flex text-amber-400 text-[14px]">
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+</div>
+</div>
+</div>
+<span class="text-xs text-gray-400 font-medium">2h ago</span>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-3 leading-relaxed">
+                Omg! The <span class="text-primary font-semibold">Strawberry Cream Float</span> is officially my summer obsession. The ice cream stays firm but melts just enough to make it creamy. 🍓🍦
+            </p>
+<div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+<img alt="User photo of drink" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB1ZgKa3lj5dxGUyw_efkpFQOII8wSzN9WWCMotoHldCd5bQnEkg0aCgxXiqUXXEwJYPdmyopO_h0NI1VrxYDwxZKmqowmL_y_FN48CfNIshx8fKLhzBUHdbrKzqXbNlVXoWDJ1zM815rzdLF-8JxvY9ON5-GT2AJ_0RezE4wrW9adqw-_ZNVGhbQqSHesfadI3F4OWs9r5j--hjBWyluox6BvtERB_wfZ4lMBAxk93aClMbeJvXNgllEFA4XGwjXgXSEeqpDmrM3F"/>
+<div class="absolute bottom-2 right-2 bg-black/50 backdrop-blur-md px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-icons-round text-white text-xs">favorite</span>
+<span class="text-white text-xs font-bold">24</span>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-1">
+<button class="text-xs font-bold text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-icons-round text-base">thumb_up_alt</span> Helpful
+                </button>
+<button class="text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors flex items-center gap-1">
+<span class="material-icons-round text-base">chat_bubble_outline</span> Comment
+                </button>
+</div>
+</article>
+<article class="glass-card rounded-2xl p-4 transition-transform active:scale-[0.99]">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-3">
+<img alt="Reviewer" class="w-10 h-10 rounded-full object-cover ring-2 ring-white dark:ring-gray-700 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxegTaLowrcRTDNprXjXkKq63XkGCSlEzdP-LjhSLgjr7b_YAr6B2FchIqgBYIxU7c_MgHYNDEaCz-Wkl1dwsfYW_BjEtcMsrzGmXE42Brej1gC6VIjVIFy71hgqwGsc7ux_GR5FOgiLQEDIo0DeIJjBnIBEp8GSeSyiY_AnCTdE8axCQp5XwUqGq8AeFzkBKojP6n5DrOm72nV9b3Eoecf9LkQpJYnrwHSm4wyrdR_yN1JiMfmD2-QrwDgvIGuyLlJQ6t5ONUwf7Z"/>
+<div>
+<h3 class="font-bold text-sm text-gray-800 dark:text-white flex items-center gap-1">
+                            Mike T.
+                            <span class="material-icons-round text-blue-500 text-[14px]" title="Verified Purchaser">verified</span>
+</h3>
+<div class="flex text-amber-400 text-[14px]">
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+</div>
+</div>
+</div>
+<span class="text-xs text-gray-400 font-medium">1d ago</span>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-3 leading-relaxed">
+                Super refreshing! I usually find these too sweet, but the balance with the fizzy soda is perfect. Plus, check out this color!
+            </p>
+<div class="relative w-full h-48 rounded-xl overflow-hidden mb-3 group">
+<img alt="User photo of drink" class="w-full h-full object-contain bg-pink-100/50 dark:bg-white/5 p-4 transform group-hover:rotate-3 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJvPdXbQENa_pQy6fo46zICA60_CmbWWjt4-Lz1ne-ug653f8fnGxLDEYlwJ6Ho6Qk5p9SOXoJDu2F4ACWp1RgcrqJWR2WKbg2hbwLginukOUODMyS3RadxOgqb_t1_fK3Fzmar33daxw9iXv-GHZsIweVaePMqclg3aWbxkL5zSLsyTSfw8Bt7B2lWmZVIExl_g8qtJxYqDV-MWDPzKVq4M3nsbJ8IDatW4xeRLp52wNKcg25JLmny-2XimzGY0MWh0-OeybF31_r"/>
+<div class="absolute bottom-2 right-2 bg-black/50 backdrop-blur-md px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-icons-round text-white text-xs">favorite</span>
+<span class="text-white text-xs font-bold">12</span>
+</div>
+</div>
+<div class="flex items-center gap-4 pt-1">
+<button class="text-xs font-bold text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-icons-round text-base">thumb_up_alt</span> Helpful
+                </button>
+</div>
+</article>
+<article class="glass-card rounded-2xl p-4 transition-transform active:scale-[0.99]">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-3">
+<img alt="Reviewer" class="w-10 h-10 rounded-full object-cover ring-2 ring-white dark:ring-gray-700 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMbh2uLs-fl4jlx1o-e8XqipK2U4x0GjIeQtsRxulYJBxEHCxVxJECg3s5N_GxLwDCgIaJIIgzPEnzY3aXlozkHr2XZGr62zKq_nYCpOd6oOiPsDM-7FjL--YqZtZEeld0xuD-ZJxipW63Cltkb7aB-fDUp1R3S5F4yBB4XI-I3yDj_h6lZFjfvtsivMUbZFRsAKv5NB3Zx2XsFptUsA6QvN6RHbXgBA-Ic_V_0Kpg09QLOdnEMjUe0B5wrP3vNb8D0aqdTt0ezST5"/>
+<div>
+<h3 class="font-bold text-sm text-gray-800 dark:text-white flex items-center gap-1">
+                            Emily Rose
+                            <span class="text-xs text-gray-400 font-normal ml-1">purchased Medium (16oz)</span>
+</h3>
+<div class="flex text-amber-400 text-[14px]">
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round">star</span>
+<span class="material-icons-round text-gray-300">star</span>
+</div>
+</div>
+</div>
+<span class="text-xs text-gray-400 font-medium">3d ago</span>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm mb-3 leading-relaxed">
+                Great taste, but I wish there were more Oreo crumbs on top. Next time I'll ask for double toppings! 🍪
+            </p>
+<div class="relative w-full h-32 rounded-xl overflow-hidden mb-3 group">
+<img alt="User photo of drink" class="w-full h-full object-contain bg-orange-50 dark:bg-white/5 p-2 transform group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx1oj11Ab0NSVC0HZkIJfJkRscIjnRLdthgQPfOU1hTXogzMWghFZ-Nwc8UZfcPoyQv9Qh6gQmqYbhfj73tg8NApuwAXXd_TSkms7UwgG537DHBsE9kMSjAMxa5ZYE0c0F__IogWaAhIOAP0CG4gsiqv0LeKIjlQxZ621i6agBrGHx4nXSl5TwCsfKv828PtHVfNSyWovip8y8__KnnGos8dEPXjzlnhycf4MHBUi6kF-QZUL86_7_-tqwJheQcufc5dAvjSx0TeK7"/>
+</div>
+<div class="flex items-center gap-4 pt-1">
+<button class="text-xs font-bold text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-icons-round text-base">thumb_up_alt</span> Helpful
+                </button>
+</div>
+</article>
+</div>
+</main>
+<button class="fixed bottom-24 right-6 z-40 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full p-4 shadow-xl shadow-gray-900/20 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group">
+<span class="material-icons-round">edit</span>
+<span class="font-bold pr-1">Write a Review</span>
+</button>
+<nav class="fixed bottom-0 left-0 w-full z-50 glass-panel border-t border-white/20 dark:border-white/5 pb-safe">
+<div class="flex justify-around items-center pt-3 pb-2 px-2">
+<button class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary transition-colors w-16 group">
+<span class="material-icons-round text-2xl group-hover:-translate-y-0.5 transition-transform">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary transition-colors w-16 group">
+<span class="material-icons-round text-2xl group-hover:-translate-y-0.5 transition-transform">local_bar</span>
+<span class="text-[10px] font-medium">Flavors</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary transition-colors w-16 group">
+<div class="relative">
+<span class="material-icons-round text-2xl group-hover:-translate-y-0.5 transition-transform">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-primary rounded-full"></span>
+</div>
+<span class="text-[10px] font-medium">Order</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary w-16">
+<span class="material-icons-round text-2xl drop-shadow-sm">star</span>
+<span class="text-[10px] font-bold">Reviews</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary transition-colors w-16 group">
+<span class="material-icons-round text-2xl group-hover:-translate-y-0.5 transition-transform">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</div>
+</nav>
+<div class="fixed top-32 -left-8 w-32 h-32 opacity-30 pointer-events-none z-0 floating-fruit">
+<img alt="Floating Raspberry" class="w-full h-full object-contain rotate-12 blur-[1px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJvPdXbQENa_pQy6fo46zICA60_CmbWWjt4-Lz1ne-ug653f8fnGxLDEYlwJ6Ho6Qk5p9SOXoJDu2F4ACWp1RgcrqJWR2WKbg2hbwLginukOUODMyS3RadxOgqb_t1_fK3Fzmar33daxw9iXv-GHZsIweVaePMqclg3aWbxkL5zSLsyTSfw8Bt7B2lWmZVIExl_g8qtJxYqDV-MWDPzKVq4M3nsbJ8IDatW4xeRLp52wNKcg25JLmny-2XimzGY0MWh0-OeybF31_r"/>
+</div>
+<div class="fixed top-1/2 right-0 w-20 h-20 opacity-20 pointer-events-none z-0 floating-fruit" style="animation-delay: -3s;">
+<img alt="Floating Strawberry" class="w-full h-full object-contain -rotate-12 blur-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx1oj11Ab0NSVC0HZkIJfJkRscIjnRLdthgQPfOU1hTXogzMWghFZ-Nwc8UZfcPoyQv9Qh6gQmqYbhfj73tg8NApuwAXXd_TSkms7UwgG537DHBsE9kMSjAMxa5ZYE0c0F__IogWaAhIOAP0CG4gsiqv0LeKIjlQxZ621i6agBrGHx4nXSl5TwCsfKv828PtHVfNSyWovip8y8__KnnGos8dEPXjzlnhycf4MHBUi6kF-QZUL86_7_-tqwJheQcufc5dAvjSx0TeK7"/>
+</div>
+
+</body></html>

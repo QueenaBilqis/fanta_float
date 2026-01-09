@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fanta Ice Cream Float - Place Your Order</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&amp;family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#FF4081",
+                    secondary: "#FF9E80",
+                    "background-light": "#FFF5F7",
+                    "background-dark": "#1A050A",
+                    "card-light": "#FFFFFF",
+                    "card-dark": "#2D1B22",
+                },
+                fontFamily: {
+                    display: ["Fredoka", "sans-serif"],
+                    body: ["Nunito", "sans-serif"],
+                },
+                borderRadius: {
+                    DEFAULT: "1rem",
+                    "xl": "1.5rem",
+                    "2xl": "2rem",
+                    "3xl": "3rem",
+                },
+            },
+        },
+    };
+</script>
+<style>::-webkit-scrollbar { width: 0px; background: transparent; }
+    .glass-panel {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+    .dark .glass-panel {
+        background: rgba(30, 30, 30, 0.8);
+    }.float-3d {
+        animation: float-y 6s ease-in-out infinite;
+    }
+    @keyframes float-y {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    .safe-area-top {
+        padding-top: max(env(safe-area-inset-top), 3.5rem);
+    }
+    .safe-area-bottom {
+        padding-bottom: max(env(safe-area-inset-bottom), 1.5rem);
+    }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 font-body min-h-screen relative overflow-x-hidden selection:bg-primary selection:text-white">
+<div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-pink-50 via-white to-orange-50 dark:from-background-dark dark:via-black dark:to-gray-900"></div>
+<img alt="Pink fruit splash background" class="absolute top-0 right-0 w-[150%] max-w-none h-auto object-cover opacity-[0.08] dark:opacity-[0.05] -translate-y-1/4 translate-x-1/4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQvuVTsiUPtXI3_1BdQu0COiMzXYn7JUnh88fXFawo1JndScbDBbzhN3sVe_QpQc2v4Tl0FSXZOL2fF0uCq1hbtD9vvTxK_6c_TL7eEj_i0mpjbhbeREobT7k657PbjOQakrIWCFgPK8FT3P268IM95DKHc1aOXEUJw5VpkEphGJuhtgwFJUm86XZTKYGlZgKQU7bnqrBAOQc4bP5C8s6VYBPZKSs5FKAXgkUGQ2OGvsWQDrr3Gc9d1-1Q0kfqacVCFTPNlliA3Dmr"/>
+<div class="absolute top-40 left-0 w-64 h-64 bg-primary/10 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-40 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-[100px]"></div>
+</div>
+<header class="fixed top-0 left-0 right-0 z-40 safe-area-top transition-all duration-300">
+<div class="px-6 py-2 flex items-center justify-between">
+<button class="w-10 h-10 rounded-full bg-white/50 dark:bg-black/20 backdrop-blur-md flex items-center justify-center text-gray-700 dark:text-white shadow-sm border border-white/20 hover:bg-white dark:hover:bg-black/40 transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span>
+</button>
+<h1 class="font-display font-semibold text-lg text-gray-800 dark:text-white tracking-wide">Checkout</h1>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-gray-700 dark:text-white">
+<span class="material-symbols-outlined text-[24px]">more_horiz</span>
+</button>
+</div>
+</header>
+<main class="relative z-10 w-full max-w-md mx-auto safe-area-top pt-16 pb-32 px-6">
+<div class="flex items-center justify-between mb-10 px-2">
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-8 h-8 rounded-full bg-primary/10 border border-primary text-primary flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<span class="text-[10px] font-bold tracking-wider text-primary uppercase">Select</span>
+</div>
+<div class="flex-1 h-[2px] bg-gradient-to-r from-primary/50 to-primary mx-3 rounded-full"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-pink-600 text-white shadow-lg shadow-primary/30 flex items-center justify-center ring-4 ring-primary/10 relative">
+<span class="font-display font-bold text-sm">2</span>
+<div class="absolute inset-0 rounded-full bg-primary animate-ping opacity-20"></div>
+</div>
+<span class="text-[10px] font-bold tracking-wider text-gray-800 dark:text-white uppercase">Check</span>
+</div>
+<div class="flex-1 h-[2px] bg-gray-200 dark:bg-gray-700 mx-3 rounded-full"></div>
+<div class="flex flex-col items-center gap-2 opacity-50">
+<div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-gray-400 flex items-center justify-center">
+<span class="font-display font-bold text-xs">3</span>
+</div>
+<span class="text-[10px] font-bold tracking-wider text-gray-500 uppercase">Done</span>
+</div>
+</div>
+<div class="relative mb-8 mt-12">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-48 z-20 float-3d drop-shadow-2xl pointer-events-none">
+<img alt="Strawberry Cream Float 3D" class="w-full h-auto object-contain scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB1ZgKa3lj5dxGUyw_efkpFQOII8wSzN9WWCMotoHldCd5bQnEkg0aCgxXiqUXXEwJYPdmyopO_h0NI1VrxYDwxZKmqowmL_y_FN48CfNIshx8fKLhzBUHdbrKzqXbNlVXoWDJ1zM815rzdLF-8JxvY9ON5-GT2AJ_0RezE4wrW9adqw-_ZNVGhbQqSHesfadI3F4OWs9r5j--hjBWyluox6BvtERB_wfZ4lMBAxk93aClMbeJvXNgllEFA4XGwjXgXSEeqpDmrM3F"/>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-[2rem] pt-24 pb-6 px-6 shadow-xl shadow-pink-100/50 dark:shadow-none border border-white/60 dark:border-white/5 relative overflow-hidden">
+<div class="absolute -top-20 -right-20 w-40 h-40 bg-pink-100 dark:bg-primary/10 rounded-full blur-3xl"></div>
+<div class="text-center relative z-10">
+<h2 class="font-display text-2xl font-bold text-gray-800 dark:text-white leading-tight">Strawberry<br/><span class="text-primary">Cream Float</span></h2>
+<div class="flex items-center justify-center gap-2 mt-2 mb-6">
+<span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">$5.99</span>
+<span class="text-gray-400 text-xs line-through">$7.50</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-2 border border-gray-100 dark:border-gray-700">
+<div class="text-center p-2">
+<p class="text-[10px] text-gray-400 uppercase tracking-wide font-bold mb-1">Size</p>
+<p class="text-xs font-bold text-gray-700 dark:text-gray-200">Medium</p>
+</div>
+<div class="text-center p-2 border-l border-r border-gray-200 dark:border-gray-600">
+<p class="text-[10px] text-gray-400 uppercase tracking-wide font-bold mb-1">Cal</p>
+<p class="text-xs font-bold text-gray-700 dark:text-gray-200">320</p>
+</div>
+<div class="text-center p-2">
+<p class="text-[10px] text-gray-400 uppercase tracking-wide font-bold mb-1">Ice</p>
+<p class="text-xs font-bold text-gray-700 dark:text-gray-200">Regular</p>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-5">
+<h3 class="font-display text-lg font-bold text-gray-800 dark:text-white px-1">Delivery Details</h3>
+<form class="space-y-4">
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors text-[22px]">person</span>
+</div>
+<input class="block w-full pl-12 pr-4 py-4 bg-white dark:bg-card-dark border-0 ring-1 ring-gray-100 dark:ring-gray-700 rounded-2xl text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-primary/50 transition-all shadow-sm text-sm font-medium" placeholder="Full Name" type="text" value="Alex Johnson"/>
+</div>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors text-[22px]">call</span>
+</div>
+<input class="block w-full pl-12 pr-4 py-4 bg-white dark:bg-card-dark border-0 ring-1 ring-gray-100 dark:ring-gray-700 rounded-2xl text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-primary/50 transition-all shadow-sm text-sm font-medium" placeholder="Phone Number" type="tel"/>
+</div>
+<div class="relative group">
+<div class="absolute top-4 left-4 pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 group-focus-within:text-primary transition-colors text-[22px]">edit_note</span>
+</div>
+<textarea class="block w-full pl-12 pr-4 py-4 bg-white dark:bg-card-dark border-0 ring-1 ring-gray-100 dark:ring-gray-700 rounded-2xl text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-primary/50 transition-all shadow-sm resize-none text-sm font-medium" placeholder="Add a note for the store..." rows="2"></textarea>
+</div>
+</form>
+<div class="mt-8 pt-4">
+<div class="flex items-center justify-between mb-6 px-1">
+<span class="text-sm font-medium text-gray-500">Total Payment</span>
+<span class="text-2xl font-display font-bold text-gray-900 dark:text-white">$5.99</span>
+</div>
+<button class="w-full bg-gradient-to-r from-[#FF4081] to-[#FF9E80] text-white font-bold text-lg py-5 rounded-[1.25rem] shadow-xl shadow-primary/30 active:scale-[0.98] transition-all flex items-center justify-center gap-3 group relative overflow-hidden">
+<span class="relative z-10">Place Order</span>
+<span class="material-symbols-outlined relative z-10 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 rounded-[1.25rem]"></div>
+</button>
+</div>
+</div>
+</main>
+<div class="fixed top-32 -left-8 w-24 h-24 opacity-30 dark:opacity-20 pointer-events-none z-0 rotate-12">
+<img alt="Floating decoration" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx1oj11Ab0NSVC0HZkIJfJkRscIjnRLdthgQPfOU1hTXogzMWghFZ-Nwc8UZfcPoyQv9Qh6gQmqYbhfj73tg8NApuwAXXd_TSkms7UwgG537DHBsE9kMSjAMxa5ZYE0c0F__IogWaAhIOAP0CG4gsiqv0LeKIjlQxZ621i6agBrGHx4nXSl5TwCsfKv828PtHVfNSyWovip8y8__KnnGos8dEPXjzlnhycf4MHBUi6kF-QZUL86_7_-tqwJheQcufc5dAvjSx0TeK7"/>
+</div>
+<div class="fixed bottom-32 -right-8 w-32 h-32 opacity-30 dark:opacity-20 pointer-events-none z-0 -rotate-12">
+<img alt="Floating decoration" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJvPdXbQENa_pQy6fo46zICA60_CmbWWjt4-Lz1ne-ug653f8fnGxLDEYlwJ6Ho6Qk5p9SOXoJDu2F4ACWp1RgcrqJWR2WKbg2hbwLginukOUODMyS3RadxOgqb_t1_fK3Fzmar33daxw9iXv-GHZsIweVaePMqclg3aWbxkL5zSLsyTSfw8Bt7B2lWmZVIExl_g8qtJxYqDV-MWDPzKVq4M3nsbJ8IDatW4xeRLp52wNKcg25JLmny-2XimzGY0MWh0-OeybF31_r"/>
+</div>
+<nav class="fixed bottom-0 w-full z-50 glass-panel border-t border-white/20 dark:border-white/5 pb-safe safe-area-bottom">
+<div class="flex justify-around items-center h-16 max-w-md mx-auto px-2">
+<a class="flex flex-col items-center justify-center w-12 h-12 text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="text-[9px] font-medium mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center w-12 h-12 text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">local_cafe</span>
+<span class="text-[9px] font-medium mt-1">Flavors</span>
+</a>
+<a class="relative -top-5 flex flex-col items-center justify-center" href="#">
+<div class="w-14 h-14 bg-primary text-white rounded-full shadow-lg shadow-primary/40 flex items-center justify-center transform transition-transform hover:scale-105 border-4 border-white dark:border-background-dark">
+<span class="material-symbols-outlined text-[26px]">shopping_bag</span>
+</div>
+<span class="text-[9px] font-bold text-primary mt-1">Order</span>
+</a>
+<a class="flex flex-col items-center justify-center w-12 h-12 text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">star</span>
+<span class="text-[9px] font-medium mt-1">Reviews</span>
+</a>
+<a class="flex flex-col items-center justify-center w-12 h-12 text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="text-[9px] font-medium mt-1">Profile</span>
+</a>
+</div>
+</nav>
+
+</body></html>

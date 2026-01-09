@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Track My Float Order</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F97316", // Vibrant Orange
+                        secondary: "#EC4899", // Vibrant Pink
+                        "background-light": "#FFF7ED", // Very light orange/cream
+                        "background-dark": "#1F1D2B", // Dark navy/purple tone
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#2D2B3B",
+                        "brand-orange": "#FB923C",
+                    },
+                    fontFamily: {
+                        display: ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "2rem",
+                        "3xl": "2.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>body {
+    font-family: "Poppins", sans-serif
+    }.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #F97316, #EC4899)
+    }
+.map-container {background-color: #e5e7eb;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCK9sgylVgTM6jwmjRwbXHu56ToORhl1nMl-W9QnXxjEMdW99xkP8Bo_IAKLqQ1Pc8NwP3G4gZLyt2ECWNFoiNb76TiC-9E0-7aCE4AU9QMVDCnFEBqPbyMYouLYR4T8YQ-EWwtGHUCHeMDQXiSTvaD3CkfaP7iI6EilGhv3E8fySwpgmA4T-_I9uytLqZE1UL0eZMW2EujTNvTmuiaYsREShpSf7B21iTA4x0mlm2Rp-oJ3YthFOpmGQWIsfz6luhsCke-MC9mazMv)
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 min-h-screen flex flex-col relative overflow-hidden transition-colors duration-300">
+<header class="pt-12 pb-4 px-6 flex items-center justify-between z-10 bg-gradient-to-b from-background-light/90 to-transparent dark:from-background-dark/90 sticky top-0 backdrop-blur-sm">
+<button class="w-10 h-10 bg-white dark:bg-card-dark rounded-full shadow-sm flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<span class="material-icons-round">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold dark:text-white">Track Order</h1>
+<button class="w-10 h-10 bg-white dark:bg-card-dark rounded-full shadow-sm flex items-center justify-center text-primary hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<span class="material-icons-round">support_agent</span>
+</button>
+</header>
+<main class="flex-1 flex flex-col relative px-4 pb-28">
+<div class="relative w-full h-80 bg-gray-200 dark:bg-gray-700 rounded-3xl overflow-hidden shadow-lg mb-6 map-container group">
+<img alt="Map view of city streets" class="w-full h-full object-cover opacity-80 dark:opacity-60 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNhYOTAkTzVO9N9p0pqw9VUMY2m4FxsluDIsvEenW34QrpqnkE8CJIO0J3y4XaOgrn0HXKhCgHxlEq20rFCEtQxsK2dXzkxnewnANhSeBmG9pUI3zOG0WXLg1LfdhU23454NDX7jgpCsMfwOo1_Niv_Tli2YmGqVw5oBFMU9kscNyAAkKwCNVWoRxX-X5QM6Yqii97uvpfIjdX_vX4yxAg7iy_W-u5tWDOC7YWpoWJ_veMFJ-xOxTyC-zkzLPAPiHCC44653GY4Wqv"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 1;">
+<path d="M100,250 C150,200 200,280 280,150" fill="none" stroke="#F97316" stroke-dasharray="10,5" stroke-linecap="round" stroke-width="6"></path>
+</svg>
+<div class="absolute top-1/3 right-1/4 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
+<div class="bg-white dark:bg-card-dark p-2 rounded-xl shadow-lg mb-2">
+<span class="text-xs font-bold text-gray-800 dark:text-white block whitespace-nowrap px-2">15 mins away</span>
+</div>
+<div class="w-12 h-12 bg-primary rounded-full border-4 border-white dark:border-card-dark flex items-center justify-center shadow-xl animate-bounce">
+<span class="material-icons-round text-white text-2xl">local_shipping</span>
+</div>
+</div>
+<div class="absolute bottom-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 z-0">
+<div class="w-8 h-8 bg-secondary rounded-full border-4 border-white dark:border-card-dark flex items-center justify-center shadow-lg">
+<span class="material-icons-round text-white text-sm">home</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white dark:bg-card-dark rounded-full shadow-md flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary">
+<span class="material-icons-round">add</span>
+</button>
+<button class="w-10 h-10 bg-white dark:bg-card-dark rounded-full shadow-md flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-primary">
+<span class="material-icons-round">remove</span>
+</button>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-3xl p-6 shadow-sm mb-6">
+<h2 class="text-lg font-bold mb-4 dark:text-white">Order Status</h2>
+<div class="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700 space-y-8">
+<div class="relative">
+<div class="absolute -left-[21px] top-1 w-4 h-4 rounded-full bg-green-500 border-2 border-white dark:border-card-dark"></div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-gray-400 dark:text-gray-500 line-through">Order Received</span>
+<span class="text-xs text-gray-400 dark:text-gray-500">2:30 PM</span>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -left-[21px] top-1 w-4 h-4 rounded-full bg-green-500 border-2 border-white dark:border-card-dark"></div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-gray-400 dark:text-gray-500 line-through">Preparing your Float</span>
+<span class="text-xs text-gray-400 dark:text-gray-500">2:35 PM</span>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -left-[25px] top-0 w-6 h-6 rounded-full bg-primary border-4 border-orange-200 dark:border-orange-900 shadow-[0_0_15px_rgba(249,115,22,0.5)] flex items-center justify-center">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+<div class="flex flex-col -mt-1">
+<span class="text-base font-bold text-primary">Out for Delivery</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">Driver is on the way!</span>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -left-[21px] top-1 w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-600 border-2 border-white dark:border-card-dark"></div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-gray-400 dark:text-gray-500">Delivered</span>
+<span class="text-xs text-gray-400 dark:text-gray-500">Estimated 3:00 PM</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-orange-500 to-pink-500 dark:from-orange-600 dark:to-pink-700 rounded-3xl p-5 text-white shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="relative">
+<img alt="Driver Profile" class="w-14 h-14 rounded-full object-cover border-2 border-white/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZLe_F2GPQggU1EDaAycg85GLnoEzyfSf3q0X1HwGplYiCeCZP_CZYY8PbMg2l0fyB9KzfNz9XTV9Pq19eneQ6NQ8jea4BQZEePMdZRFdvXtIYp0dU59aTE50NuSVUU98rATl3xdyaP_F7P69VpjAqCYzfNCnRpg0IZVyUXIAPj7JrHIYPrkFFkLscI85TEZ3ZFErYheWAPsdtrCjIzaiw0CDmIlUvgdNcJS2uLo1bQyeU7aTp6AsS8ymv6i4iIxLk1EJhMKKTcG0_"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-green-400 border-2 border-pink-500 rounded-full"></div>
+</div>
+<div>
+<h3 class="font-bold text-lg">Mike R.</h3>
+<div class="flex items-center text-xs opacity-90">
+<span class="material-icons-round text-sm mr-1 text-yellow-300">star</span>
+<span>4.9 (124 deliveries)</span>
+</div>
+<p class="text-xs mt-1 opacity-80">Driving a Blue Scooter</p>
+</div>
+</div>
+<button class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+<span class="material-icons-round text-white">phone</span>
+</button>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-card-dark/95 backdrop-blur-md pb-6 pt-2 px-6 rounded-t-[2rem] shadow-[0_-5px_20px_rgba(0,0,0,0.05)] dark:shadow-none border-t border-gray-100 dark:border-gray-800 z-50">
+<div class="flex justify-between items-end">
+<button class="flex flex-col items-center gap-1 w-16 text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-icons-round text-2xl">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-16 text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-icons-round text-2xl">local_drink</span>
+<span class="text-[10px] font-medium">Flavors</span>
+</button>
+<div class="relative -top-6">
+<div class="absolute inset-0 bg-orange-100 dark:bg-orange-900/30 rounded-full scale-125 blur-sm"></div>
+<button class="relative w-14 h-14 bg-gradient-to-tr from-primary to-orange-400 rounded-full flex items-center justify-center text-white shadow-lg shadow-orange-300 dark:shadow-orange-900/50 transform hover:-translate-y-1 transition-transform">
+<span class="material-icons-round text-3xl">local_mall</span>
+</button>
+</div>
+<button class="flex flex-col items-center gap-1 w-16 text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-icons-round text-2xl">chat_bubble_outline</span>
+<span class="text-[10px] font-medium">Reviews</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-16 text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-icons-round text-2xl">person_outline</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</div>
+</nav>
+
+</body></html>
